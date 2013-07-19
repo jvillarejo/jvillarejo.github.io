@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="Icons"
+   x="0px"
+   y="0px"
+   width="100px"
+   height="100px"
+   viewBox="0 0 100 100"
+   style="enable-background:new 0 0 100 100;"
+   xml:space="preserve"
+   inkscape:version="0.48.3.1 r9886"
+   sodipodi:docname="facebook.svg"><style
+   id="style2983"
+   type="text/css">#path2987:hover { 
+	fill-opacity:0.75
+}</style><metadata
+   id="metadata8"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+   id="defs6" /><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="1301"
+   inkscape:window-height="744"
+   id="namedview4"
+   showgrid="false"
+   inkscape:zoom="1.668772"
+   inkscape:cx="-24.585458"
+   inkscape:cy="100.72778"
+   inkscape:window-x="65"
+   inkscape:window-y="24"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="Icons" />
+<path
+   sodipodi:type="arc"
+   style="fill:#000000"
+   id="path2987"
+   sodipodi:cx="49.788136"
+   sodipodi:cy="54.449154"
+   sodipodi:rx="54.872883"
+   sodipodi:ry="51.059322"
+   d="m 104.66102,54.449154 a 54.872883,51.059322 0 1 1 -109.7457673,0 54.872883,51.059322 0 1 1 109.7457673,0 z"
+   transform="matrix(0.91119689,0,0,0.97925311,4.6332059,-3.3195031)" /><path
+   id="Facebook"
+   d="m 38.997286,27.070167 c 0,1.998 0,10.915881 0,10.915881 H 31 v 13.34819 h 7.997286 V 91 H 55.426167 V 51.335119 h 11.023357 c 0,0 1.032476,-6.400119 1.532857,-13.398405 -1.435071,0 -12.494548,0 -12.494548,0 0,0 0,-7.765595 0,-9.126666 0,-1.363715 1.790977,-3.198738 3.561691,-3.198738 1.76719,0 5.496262,0 8.950476,0 0,-1.817405 0,-8.096834 0,-13.896143 -4.611786,0 -9.856976,0 -12.169476,0 -17.239357,-8.81e-4 -16.833238,13.360523 -16.833238,15.355 z"
+   style="fill:#ffffff;fill-opacity:1"
+   inkscape:connector-curvature="0" />
+</svg>

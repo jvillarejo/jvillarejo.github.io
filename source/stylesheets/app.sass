@@ -1,0 +1,116 @@
+@import "compass"
+@import "partials/boilerplate"
+@import "partials/normalize"
+
+$white: #F9F9F9 
+$black: #262A2D
+
+body > header.pinned
+  border-bottom-color: rgba(0,0,0,0.2)
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.15)
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15)
+  top: 0 !important
+  position: fixed !important
+
+body > header
+  background: $white
+  position: fixed
+  left: 0
+  right: 0
+  top: 0
+  z-index: 9999
+  border-bottom: 1px solid #e6e5e5
+  height: 120px
+  -webkit-transition: box-shadow .2s ease-in-out
+
+body > footer
+  border-top: 1px solid #e6e5e5
+  background: $white
+  clear:both 
+  height: 100px
+  color: $black
+
+nav ul
+  float: right
+  margin-right: 25px
+
+nav ul li
+  display: inline
+  float: left
+  margin-right: 30px
+  margin-top: 5px
+  margin-bottom: 5px
+
+
+a.anchorlink
+  display: inline-block
+  background: #B50D20
+  color: $white
+  text-decoration: none
+  padding: 3px 14px 0px 14px
+  height: 24px
+  border-radius: 5px
+  -o-transition: .5s
+  -ms-transition: .5s
+  -moz-transition: .5s
+  -webkit-transition: .5s
+  /* ...and now for the proper property */
+  transition: .5s
+
+
+a.anchorlink:hover
+  background: #EDCED2
+  color: #B50D20
+
+.content
+  min-height: 1000px
+  height: 1000px
+  width: 100%
+  max-width: 1920px
+  position: relative
+  margin: 0 auto
+
+.content article
+  height: 458px
+  position: absolute
+  text-align: center
+  top: 150px
+  width: 100%
+  font-size: 20px
+
+.navigation-content 
+  width: 100%
+
+span
+  padding: 3px 5px
+  display: inline
+  margin: 0px
+  line-height: 40px
+
+.black
+  background-color: $black
+  color: $white 
+
+  span  
+    background: $white
+    color: $black
+
+.white 
+  background-color: $white
+  color: $black
+
+  span 
+    background: $black
+    color: $white
+
+.icons img 
+  padding-right: 50px
+  padding-top: 25px
+
+.footer-left
+  float: left
+  padding-left: 50px
+  
+.footer-right
+  float: right
+  padding-right: 50px
