@@ -1,16 +1,30 @@
 @import "compass"
 @import "partials/boilerplate"
 @import "partials/normalize"
+@import "fonts/stylesheet"
 
 $white: #F9F9F9 
 $black: #262A2D
 $red: #B50D20
 
 @mixin fade-in
+  transition: .5s
   -o-transition: .5s
   -ms-transition: .5s
   -moz-transition: .5s
   -webkit-transition: .5s
+body 
+  font-family: 'Verdana'
+
+h1,h2,h2 
+  font-family: 'bebas_neueregular'
+
+.logo
+  float: left
+  padding-left: 20px
+  padding-top: 0px
+  font-size: 65px
+  color: $black
 
 body > header.pinned
   border-bottom-color: rgba(0,0,0,0.2)
@@ -27,7 +41,7 @@ body > header
   top: 0
   z-index: 9999
   border-bottom: 1px solid #e6e5e5
-  height: 120px
+  height: 100px
   -webkit-transition: box-shadow .2s ease-in-out
 
 body > footer
@@ -36,6 +50,10 @@ body > footer
   clear:both 
   height: 100px
   color: $black
+
+nav
+  padding-top: 60px
+  float: right
 
 nav ul
   float: right
@@ -48,19 +66,18 @@ nav ul li
   margin-top: 5px
   margin-bottom: 5px
 
-
 a.anchorlink
   display: inline-block
   background: $red
   color: $white
   text-decoration: none
+  margin-left: 25px
+  text-align: center
   padding: 3px 14px 0px 14px
-  height: 24px
+  height: 30px
+  width: 70px
   border-radius: 5px
   @include fade-in
-  /* ...and now for the proper property */
-  transition: .5s
-
 
 a.anchorlink:hover
   background: #EDCED2
@@ -83,6 +100,7 @@ a.anchorlink:hover
   font-size: 20px
 
 .navigation-content 
+  height: 120px
   width: 100%
 
 span
