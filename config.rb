@@ -79,16 +79,16 @@ configure :build do
 end
 
 after_configuration do 
-  Bower.setup(sprockets)
+  Bower.setup(root, sprockets)
 end
 
 require 'sprockets/directive_processor'
 
 module Bower
 
-  def self.setup(sprockets_context)
-      sprockets_context.append_path bower_install_path
-      sprockets_context.register_preprocessor 'application/javascript', Bower::DirectiveProcessor
+  def self.setup(root, sprockets_environment)
+      sprockets_environment.append_path "#{root}/#{bower_install_path}"
+      sprockets_environment.register_preprocessor 'application/javascript', Bower::DirectiveProcessor
   end
 
   def self.bower_install_path
