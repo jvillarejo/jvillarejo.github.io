@@ -1,0 +1,6 @@
+{
+	"dependencies": {
+		"jquery": "1.9.0",
+		"angular": "1.0.7"
+	}
+}

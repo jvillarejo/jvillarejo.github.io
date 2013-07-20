@@ -1,4 +1,5 @@
 //= require_tree .
+//= require_bower_dependencies
 
 $(document).ready(function() {
 	var speed = 10;

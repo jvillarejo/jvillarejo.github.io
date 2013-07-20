@@ -77,3 +77,42 @@ configure :build do
   # Or use a different image path
   # set :http_path, "/Content/images/"
 end
+
+after_configuration do 
+  Bower.setup(sprockets)
+end
+
+require 'sprockets/directive_processor'
+
+module Bower
+
+  def self.setup(sprockets_context)
+      sprockets_context.append_path bower_install_path
+      sprockets_context.register_preprocessor 'application/javascript', Bower::DirectiveProcessor
+  end
+
+  def self.bower_install_path
+    bowerrc = JSON.parse(IO.read('.bowerrc'))
+    bowerrc["directory"]
+  end
+
+  class Bower::DirectiveProcessor < Sprockets::DirectiveProcessor
+    
+    def process_require_bower_dependencies_directive
+      bower_dependencies.each do |filename|
+        context.require_asset(filename)
+      end
+    end
+
+    private
+    def bower_dependencies
+      cmd = 'bower ls --paths'
+      data = IO.popen(cmd)
+      bower_paths = JSON.parse(data.read).keys
+      data.close 
+
+      bower_paths
+    end
+end
+
+end
