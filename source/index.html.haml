@@ -9,36 +9,13 @@
         %a.anchorlink{ "href" => "#hire-me-content" } Hire me
         %a.anchorlink{ "href" => "http://blog.jonvillage.com" } Blog
 
-%section#about-content.content.black
-  %article
-    %h1
-      %span Hi! I'm Jon Village and I'm a developer
+= partial 'about'
 
-%section#portfolio-content.content.white
-  %article
-    %h1
-      %span This is my portfolio
+= partial 'portfolio'
 
+= partial 'hire-me'
 
-%section#hire-me-content.content.black
-  %article
-    %h1
-      %span I'm ready to work!
-
-%section#social-content.content.white
-  %article
-    %h1
-      %span Follow me!
-      .icons
-        %a{ "href" => "http://www.facebook.com/villagejon" }
-          .social.facebook{"src" => "images/icons/facebook.png" }
-        %a{ "href" => "https://twitter.com/JonVillage" }
-          .social.twitter{"src" => "images/icons/twitter.png" }
-        %a{ "href" => "https://github.com/jvillarejo" }
-          .social.github{"src" => "images/icons/github.png" }
-        %a{ "href" => "http://ar.linkedin.com/pub/jon-village/13/a8b/2a8/" }
-          .social.linkedin{"src" => "images/icons/linkedin.png" }
-
+= partial 'social'
 
 %footer#footer-content.black
   %p.footer-left All rights reserved to Jon Village
