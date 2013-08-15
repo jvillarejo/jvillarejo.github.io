@@ -6,6 +6,7 @@ gem 'middleman', '~>3.0.14'
 gem 'middleman-livereload'
 gem 'rb-inotify'
 
+gem 'susy'
 gem 'json', '~> 1.7.7'
 gem 'haml'
 gem 'compass'

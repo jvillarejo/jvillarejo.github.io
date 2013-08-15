@@ -2,6 +2,7 @@
 @import "partials/boilerplate"
 @import "partials/normalize"
 @import "fonts/stylesheet"
+@import "susy"
 
 $white: #F9F9F9 
 $black: #262A2D
@@ -13,6 +14,7 @@ $red: #B50D20
   -ms-transition: .5s
   -moz-transition: .5s
   -webkit-transition: .5s
+
 body 
   font-family: 'Verdana'
 
@@ -47,7 +49,7 @@ body > header
 body > footer
   border-top: 1px solid #e6e5e5
   background: $white
-  clear:both 
+  clear: both 
   height: 100px
   color: $black
 
@@ -129,11 +131,11 @@ span
   padding-left: 25%
   padding-top: 25px
 
-.footer-left
+.left
   float: left
   padding-left: 50px
   
-.footer-right
+.right
   float: right
   padding-right: 50px
 
@@ -144,6 +146,10 @@ span
   height: 160px
   display: block
   @include fade-in
+
+.column
+  display: inline-block
+  width: 50%
 
 .twitter 
   background: transparent url('../images/icons/twitter.png') center top no-repeat
