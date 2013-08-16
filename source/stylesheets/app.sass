@@ -22,6 +22,7 @@ h1,h2,h2
   font-family: 'bebas_neueregular'
 
 .logo
+  width: 25%
   float: left
   padding-left: 20px
   padding-top: 0px
@@ -54,7 +55,8 @@ body > footer
   color: $black
 
 nav
-  padding-top: 60px
+  width: 75%
+  margin-top: -120px
   float: right
 
 nav ul
@@ -67,6 +69,22 @@ nav ul li
   margin-right: 30px
   margin-top: 5px
   margin-bottom: 5px
+
+.profile 
+  width: 300px
+  height: 300px
+  border-radius: 150px
+  -moz-border-radius: 150px
+  -webkit-border-radius: 150px
+  -khtml-border-radius: 150px
+  overflow: hidden
+
+.about 
+  margin: 0 auto
+
+.about-summary
+  margin-left: 100px
+  margin-right: 100px
 
 a.anchorlink
   display: inline-block
@@ -86,8 +104,8 @@ a.anchorlink:hover
   color: #B50D20
 
 .content
-  min-height: 1000px
-  height: 1000px
+  min-height: 700px
+  height: 700px
   width: 100%
   max-width: 1920px
   position: relative
@@ -133,11 +151,9 @@ span
 
 .left
   float: left
-  padding-left: 50px
   
 .right
   float: right
-  padding-right: 50px
 
 .social
   float: left
@@ -148,8 +164,11 @@ span
   @include fade-in
 
 .column
-  display: inline-block
   width: 50%
+
+footer 
+  margin-right: 50px
+  margin-left: 50px
 
 .twitter 
   background: transparent url('../images/icons/twitter.png') center top no-repeat
