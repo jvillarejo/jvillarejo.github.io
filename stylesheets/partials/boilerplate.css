@@ -1,0 +1,382 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+/* line 18, /home/pollo/Projects/my_web_page/web/source/stylesheets/partials/boilerplate.scss */
+html,
+button,
+input,
+select,
+textarea {
+  color: #222; }
+
+/* line 22, /home/pollo/Projects/my_web_page/web/source/stylesheets/partials/boilerplate.scss */
+body {
+  font-size: 1em;
+  line-height: 1.4;
+  font-family: 'Nobile', sans-serif; }
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate.
+ * Customize the background color to match your design.
+ */
+/* line 34, /home/pollo/Projects/my_web_page/web/source/stylesheets/partials/boilerplate.scss */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+/* line 39, /home/pollo/Projects/my_web_page/web/source/stylesheets/partials/boilerplate.scss */
+::selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+/*
+ * A better looking default horizontal rule
+ */
+/* line 48, /home/pollo/Projects/my_web_page/web/source/stylesheets/partials/boilerplate.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+/* line 61, /home/pollo/Projects/my_web_page/web/source/stylesheets/partials/boilerplate.scss */
+img {
+  vertical-align: middle; }
+
+/*
+ * Remove default fieldset styles.
+ */
+/* line 69, /home/pollo/Projects/my_web_page/web/source/stylesheets/partials/boilerplate.scss */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+/* line 79, /home/pollo/Projects/my_web_page/web/source/stylesheets/partials/boilerplate.scss */
+textarea {
+  resize: vertical; }
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+/* line 87, /home/pollo/Projects/my_web_page/web/source/stylesheets/partials/boilerplate.scss */
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0; }
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/* line 98, /home/pollo/Projects/my_web_page/web/source/stylesheets/partials/boilerplate.scss */
+body > header.pinned {
+  border-bottom-color: rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  top: 0 !important;
+  position: fixed !important; }
+
+/* line 106, /home/pollo/Projects/my_web_page/web/source/stylesheets/partials/boilerplate.scss */
+body > header {
+  background: #F9F9F9;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 9999;
+  border-bottom: 1px solid #e6e5e5;
+  height: 120px;
+  -webkit-transition: box-shadow .2s ease-in-out; }
+
+/* line 118, /home/pollo/Projects/my_web_page/web/source/stylesheets/partials/boilerplate.scss */
+body > footer {
+  border-top: 1px solid #e6e5e5;
+  background: #F9F9F9;
+  clear: both;
+  height: 100px;
+  color: #262A2D; }
+
+/* line 125, /home/pollo/Projects/my_web_page/web/source/stylesheets/partials/boilerplate.scss */
+nav ul {
+  float: right;
+  margin-right: 25px; }
+
+/* line 130, /home/pollo/Projects/my_web_page/web/source/stylesheets/partials/boilerplate.scss */
+nav ul li {
+  display: inline;
+  float: left;
+  margin-right: 30px;
+  margin-top: 5px;
+  margin-bottom: 5px; }
+
+/* line 138, /home/pollo/Projects/my_web_page/web/source/stylesheets/partials/boilerplate.scss */
+a.anchorlink {
+  display: inline-block;
+  background: #B50D20;
+  color: #F9F9F9;
+  text-decoration: none;
+  padding: 3px 14px 0px 14px;
+  height: 24px;
+  border-radius: 5px;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  /* ...and now for the proper property */
+  transition: .5s; }
+
+/* line 154, /home/pollo/Projects/my_web_page/web/source/stylesheets/partials/boilerplate.scss */
+a.anchorlink:hover {
+  background: #EDCED2;
+  color: #B50D20; }
+
+/* line 162, /home/pollo/Projects/my_web_page/web/source/stylesheets/partials/boilerplate.scss */
+.content {
+  min-height: 1000px;
+  height: 1000px;
+  width: 100%;
+  max-width: 1920px;
+  position: relative;
+  margin: 0 auto; }
+
+/* line 171, /home/pollo/Projects/my_web_page/web/source/stylesheets/partials/boilerplate.scss */
+.content article {
+  height: 458px;
+  position: absolute;
+  text-align: center;
+  top: 150px;
+  width: 100%;
+  font-size: 20px; }
+
+/* line 180, /home/pollo/Projects/my_web_page/web/source/stylesheets/partials/boilerplate.scss */
+#navigation-content {
+  width: 100%; }
+
+/* line 184, /home/pollo/Projects/my_web_page/web/source/stylesheets/partials/boilerplate.scss */
+span {
+  padding: 3px 5px;
+  display: inline;
+  margin: 0px;
+  line-height: 40px; }
+
+/* line 191, /home/pollo/Projects/my_web_page/web/source/stylesheets/partials/boilerplate.scss */
+.black {
+  background-color: #262A2D;
+  color: #F9F9F9; }
+
+/* line 196, /home/pollo/Projects/my_web_page/web/source/stylesheets/partials/boilerplate.scss */
+.black span {
+  background: #F9F9F9;
+  color: #262A2D; }
+
+/* line 201, /home/pollo/Projects/my_web_page/web/source/stylesheets/partials/boilerplate.scss */
+.white {
+  background-color: #F9F9F9;
+  color: #262A2D; }
+
+/* line 206, /home/pollo/Projects/my_web_page/web/source/stylesheets/partials/boilerplate.scss */
+.white span {
+  background: #262A2D;
+  color: #F9F9F9; }
+
+/* line 211, /home/pollo/Projects/my_web_page/web/source/stylesheets/partials/boilerplate.scss */
+#back-to-top {
+  position: fixed;
+  right: 25px;
+  bottom: 25px; }
+
+/* line 217, /home/pollo/Projects/my_web_page/web/source/stylesheets/partials/boilerplate.scss */
+.icons img {
+  padding-right: 50px;
+  padding-top: 25px; }
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/*
+ * Image replacement
+ */
+/* line 230, /home/pollo/Projects/my_web_page/web/source/stylesheets/partials/boilerplate.scss */
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  /* IE 6/7 fallback */
+  *text-indent: -9999px; }
+
+/* line 238, /home/pollo/Projects/my_web_page/web/source/stylesheets/partials/boilerplate.scss */
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 150%; }
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+/* line 249, /home/pollo/Projects/my_web_page/web/source/stylesheets/partials/boilerplate.scss */
+.hidden {
+  display: none !important;
+  visibility: hidden; }
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+/* line 258, /home/pollo/Projects/my_web_page/web/source/stylesheets/partials/boilerplate.scss */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+/* line 275, /home/pollo/Projects/my_web_page/web/source/stylesheets/partials/boilerplate.scss */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto; }
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+/* line 288, /home/pollo/Projects/my_web_page/web/source/stylesheets/partials/boilerplate.scss */
+.invisible {
+  visibility: hidden; }
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+/* line 305, /home/pollo/Projects/my_web_page/web/source/stylesheets/partials/boilerplate.scss */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+/* line 310, /home/pollo/Projects/my_web_page/web/source/stylesheets/partials/boilerplate.scss */
+.clearfix:after {
+  clear: both; }
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+/* line 319, /home/pollo/Projects/my_web_page/web/source/stylesheets/partials/boilerplate.scss */
+.clearfix {
+  *zoom: 1; }
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   Theses examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */ }
+@media print, (-o-min-device-pixel-ratio: 5 / 4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */ }
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+@media print {
+  /* line 346, /home/pollo/Projects/my_web_page/web/source/stylesheets/partials/boilerplate.scss */
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster: h5bp.com/s */
+    box-shadow: none !important;
+    text-shadow: none !important; }
+
+  /* line 354, /home/pollo/Projects/my_web_page/web/source/stylesheets/partials/boilerplate.scss */
+  a,
+  a:visited {
+    text-decoration: underline; }
+
+  /* line 358, /home/pollo/Projects/my_web_page/web/source/stylesheets/partials/boilerplate.scss */
+  a[href]:after {
+    content: " (" attr(href) ")"; }
+
+  /* line 362, /home/pollo/Projects/my_web_page/web/source/stylesheets/partials/boilerplate.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")"; }
+
+  /*
+   * Don't show links for images, or javascript/internal links
+   */
+  /* line 372, /home/pollo/Projects/my_web_page/web/source/stylesheets/partials/boilerplate.scss */
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: ""; }
+
+  /* line 377, /home/pollo/Projects/my_web_page/web/source/stylesheets/partials/boilerplate.scss */
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid; }
+
+  /* line 382, /home/pollo/Projects/my_web_page/web/source/stylesheets/partials/boilerplate.scss */
+  thead {
+    display: table-header-group;
+    /* h5bp.com/t */ }
+
+  /* line 387, /home/pollo/Projects/my_web_page/web/source/stylesheets/partials/boilerplate.scss */
+  tr,
+  img {
+    page-break-inside: avoid; }
+
+  /* line 391, /home/pollo/Projects/my_web_page/web/source/stylesheets/partials/boilerplate.scss */
+  img {
+    max-width: 100% !important; }
+
+  @page {
+    margin: 0.5cm; }
+
+  /* line 401, /home/pollo/Projects/my_web_page/web/source/stylesheets/partials/boilerplate.scss */
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3; }
+
+  /* line 407, /home/pollo/Projects/my_web_page/web/source/stylesheets/partials/boilerplate.scss */
+  h2,
+  h3 {
+    page-break-after: avoid; } }
