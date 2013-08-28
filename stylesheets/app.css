@@ -977,7 +977,7 @@ nav ul li {
   margin-right: 100px; }
 
 /* line 89, /home/pollo/Projects/my_web_page/web/source/stylesheets/app.sass */
-a.anchorlink {
+.anchorlink {
   display: inline-block;
   background: #b50d20;
   color: #f9f9f9;
@@ -988,16 +988,16 @@ a.anchorlink {
   height: 30px;
   width: 70px;
   border-radius: 5px;
+  font-size: 15px;
   transition: 0.5s;
   -o-transition: 0.5s;
   -ms-transition: 0.5s;
   -moz-transition: 0.5s;
   -webkit-transition: 0.5s; }
-
-/* line 102, /home/pollo/Projects/my_web_page/web/source/stylesheets/app.sass */
-a.anchorlink:hover {
-  background: #edced2;
-  color: #b50d20; }
+  /* line 102, /home/pollo/Projects/my_web_page/web/source/stylesheets/app.sass */
+  .anchorlink:hover {
+    background: #edced2;
+    color: #b50d20; }
 
 /* line 106, /home/pollo/Projects/my_web_page/web/source/stylesheets/app.sass */
 .content {
@@ -1139,3 +1139,54 @@ footer {
   background-position: -300px -115px;
   width: 100px;
   height: 100px; }
+
+/* line 223, /home/pollo/Projects/my_web_page/web/source/stylesheets/app.sass */
+form {
+  padding-top: 15px;
+  width: 80%;
+  margin: 0 auto; }
+
+/* line 228, /home/pollo/Projects/my_web_page/web/source/stylesheets/app.sass */
+label, input {
+  display: inline-block; }
+
+/* line 231, /home/pollo/Projects/my_web_page/web/source/stylesheets/app.sass */
+label {
+  width: 30%;
+  text-align: right; }
+
+/* line 235, /home/pollo/Projects/my_web_page/web/source/stylesheets/app.sass */
+label + input {
+  width: 30%;
+  margin: 0 30% 0 1%; }
+
+/* line 239, /home/pollo/Projects/my_web_page/web/source/stylesheets/app.sass */
+input + input {
+  float: right; }
+
+/* line 242, /home/pollo/Projects/my_web_page/web/source/stylesheets/app.sass */
+input {
+  padding-left: 5px;
+  border: none; }
+
+/* line 246, /home/pollo/Projects/my_web_page/web/source/stylesheets/app.sass */
+label + textarea {
+  width: 30%;
+  margin: 0 30% 0 1%; }
+
+/* line 250, /home/pollo/Projects/my_web_page/web/source/stylesheets/app.sass */
+textarea {
+  padding-left: 5px;
+  border: none; }
+
+/* line 254, /home/pollo/Projects/my_web_page/web/source/stylesheets/app.sass */
+input.submit {
+  padding: 0 !important;
+  font-size: 18px;
+  width: 100px; }
+
+/* line 259, /home/pollo/Projects/my_web_page/web/source/stylesheets/app.sass */
+.required:after {
+  color: #b50d20;
+  content: "*";
+  display: inline; }
