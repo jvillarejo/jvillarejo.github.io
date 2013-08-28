@@ -146,8 +146,8 @@ span
     color: $white
 
 .icons
-  padding-left: 25%
-  padding-top: 25px
+  padding-left: 27%
+  padding-top: 80px
 
 .left
   float: left
@@ -158,10 +158,8 @@ span
 .social
   float: left
   margin-bottom: 10px
-  width: 160px
-  height: 160px
+  margin-right: 60px
   display: block
-  @include fade-in
 
 .column
   width: 50%
@@ -169,21 +167,6 @@ span
 footer 
   margin-right: 50px
   margin-left: 50px
-
-.twitter 
-  background: transparent url('../images/icons/twitter.png') center top no-repeat
-
-.twitter:hover
-  background: transparent url('../images/icons/twitter-red.png') center top no-repeat
-
-.facebook 
-  background: transparent url('../images/icons/facebook.png') center top no-repeat
-
-.facebook:hover
-  background: transparent url('../images/icons/facebook-red.png') center top no-repeat
-
-.github 
-  background: transparent url('../images/icons/github.png') center top no-repeat
 
 .github:hover
   background: transparent url('../images/icons/github-red.png') center top no-repeat
@@ -193,3 +176,46 @@ footer
 
 .linkedin:hover
   background: transparent url('../images/icons/linkedin-red.png') center top no-repeat
+
+.facebook, .facebook:hover, .github, .github:hover, .linkedin, .linkedin:hover, .twitter, .twitter:hover
+  background: url(../images/icons/icon-sprites.png) no-repeat
+
+.facebook
+  background-position: 0 0
+  width: 100px
+  height: 100px
+
+.facebook:hover
+  background-position: 0 -115px
+  width: 100px
+  height: 100px
+
+.github
+  background-position: -150px 0
+  width: 100px
+  height: 100px
+
+.github:hover
+  background-position: -150px -115px 
+  width: 100px
+  height: 100px
+
+.linkedin
+  background-position: -450px 0
+  width: 100px
+  height: 100px
+
+.linkedin:hover
+  background-position: -450px -115px 
+  width: 100px
+  height: 100px
+
+.twitter
+  background-position: -300px 0
+  width: 100px
+  height: 100px
+
+.twitter:hover
+  background-position: -300px -115px 
+  width: 100px
+  height: 100px
