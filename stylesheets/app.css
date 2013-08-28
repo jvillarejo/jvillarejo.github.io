@@ -1049,8 +1049,8 @@ span {
 
 /* line 148, /home/pollo/Projects/my_web_page/web/source/stylesheets/app.sass */
 .icons {
-  padding-left: 25%;
-  padding-top: 25px; }
+  padding-left: 27%;
+  padding-top: 80px; }
 
 /* line 152, /home/pollo/Projects/my_web_page/web/source/stylesheets/app.sass */
 .left {
@@ -1064,52 +1064,78 @@ span {
 .social {
   float: left;
   margin-bottom: 10px;
-  width: 160px;
-  height: 160px;
-  display: block;
-  transition: 0.5s;
-  -o-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -webkit-transition: 0.5s; }
+  margin-right: 60px;
+  display: block; }
 
-/* line 166, /home/pollo/Projects/my_web_page/web/source/stylesheets/app.sass */
+/* line 164, /home/pollo/Projects/my_web_page/web/source/stylesheets/app.sass */
 .column {
   width: 50%; }
 
-/* line 169, /home/pollo/Projects/my_web_page/web/source/stylesheets/app.sass */
+/* line 167, /home/pollo/Projects/my_web_page/web/source/stylesheets/app.sass */
 footer {
   margin-right: 50px;
   margin-left: 50px; }
 
-/* line 173, /home/pollo/Projects/my_web_page/web/source/stylesheets/app.sass */
-.twitter {
-  background: transparent url("../images/icons/twitter.png") center top no-repeat; }
-
-/* line 176, /home/pollo/Projects/my_web_page/web/source/stylesheets/app.sass */
-.twitter:hover {
-  background: transparent url("../images/icons/twitter-red.png") center top no-repeat; }
-
-/* line 179, /home/pollo/Projects/my_web_page/web/source/stylesheets/app.sass */
-.facebook {
-  background: transparent url("../images/icons/facebook.png") center top no-repeat; }
-
-/* line 182, /home/pollo/Projects/my_web_page/web/source/stylesheets/app.sass */
-.facebook:hover {
-  background: transparent url("../images/icons/facebook-red.png") center top no-repeat; }
-
-/* line 185, /home/pollo/Projects/my_web_page/web/source/stylesheets/app.sass */
-.github {
-  background: transparent url("../images/icons/github.png") center top no-repeat; }
-
-/* line 188, /home/pollo/Projects/my_web_page/web/source/stylesheets/app.sass */
+/* line 171, /home/pollo/Projects/my_web_page/web/source/stylesheets/app.sass */
 .github:hover {
   background: transparent url("../images/icons/github-red.png") center top no-repeat; }
 
-/* line 191, /home/pollo/Projects/my_web_page/web/source/stylesheets/app.sass */
+/* line 174, /home/pollo/Projects/my_web_page/web/source/stylesheets/app.sass */
 .linkedin {
   background: transparent url("../images/icons/linkedin.png") center top no-repeat; }
 
-/* line 194, /home/pollo/Projects/my_web_page/web/source/stylesheets/app.sass */
+/* line 177, /home/pollo/Projects/my_web_page/web/source/stylesheets/app.sass */
 .linkedin:hover {
   background: transparent url("../images/icons/linkedin-red.png") center top no-repeat; }
+
+/* line 180, /home/pollo/Projects/my_web_page/web/source/stylesheets/app.sass */
+.facebook, .facebook:hover, .github, .github:hover, .linkedin, .linkedin:hover, .twitter, .twitter:hover {
+  background: url(../images/icons/icon-sprites.png) no-repeat; }
+
+/* line 183, /home/pollo/Projects/my_web_page/web/source/stylesheets/app.sass */
+.facebook {
+  background-position: 0 0;
+  width: 100px;
+  height: 100px; }
+
+/* line 188, /home/pollo/Projects/my_web_page/web/source/stylesheets/app.sass */
+.facebook:hover {
+  background-position: 0 -115px;
+  width: 100px;
+  height: 100px; }
+
+/* line 193, /home/pollo/Projects/my_web_page/web/source/stylesheets/app.sass */
+.github {
+  background-position: -150px 0;
+  width: 100px;
+  height: 100px; }
+
+/* line 198, /home/pollo/Projects/my_web_page/web/source/stylesheets/app.sass */
+.github:hover {
+  background-position: -150px -115px;
+  width: 100px;
+  height: 100px; }
+
+/* line 203, /home/pollo/Projects/my_web_page/web/source/stylesheets/app.sass */
+.linkedin {
+  background-position: -450px 0;
+  width: 100px;
+  height: 100px; }
+
+/* line 208, /home/pollo/Projects/my_web_page/web/source/stylesheets/app.sass */
+.linkedin:hover {
+  background-position: -450px -115px;
+  width: 100px;
+  height: 100px; }
+
+/* line 213, /home/pollo/Projects/my_web_page/web/source/stylesheets/app.sass */
+.twitter {
+  background-position: -300px 0;
+  width: 100px;
+  height: 100px; }
+
+/* line 218, /home/pollo/Projects/my_web_page/web/source/stylesheets/app.sass */
+.twitter:hover {
+  background-position: -300px -115px;
+  width: 100px;
+  height: 100px; }
