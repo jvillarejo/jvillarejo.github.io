@@ -1,4 +1,17 @@
 %section#hire-me-content.content.black
-  %article
+  %article.contact
     %h1
       %span I'm ready to work!
+    %form{'action' => 'http://getsimpleform.com/messages?form_api_token=8164a78480892d3e3e15735ed86749d2', 'method' => 'post'}
+      %input{ 'type' => 'hidden', 'name' => 'redirect_to', 'value' => 'http://www.jonvillage.com/#hire-me-content' }
+      %p
+        %label.required Name
+        %input{ 'type' => 'text', 'name' => 'name'}
+      %p 
+        %label.required Email
+        %input{ 'type' => 'text', 'name' => 'email'}
+      %p
+        %label.required Message
+        %textarea{ 'type' => 'text', 'name' => 'message', 'rows' => 6}
+      
+      %input.anchorlink.submit{ 'type' => 'submit', 'value' => 'Contact me'}

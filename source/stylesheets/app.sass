@@ -86,7 +86,7 @@ nav ul li
   margin-left: 100px
   margin-right: 100px
 
-a.anchorlink
+.anchorlink
   display: inline-block
   background: $red
   color: $white
@@ -97,11 +97,11 @@ a.anchorlink
   height: 30px
   width: 70px
   border-radius: 5px
+  font-size: 15px
   @include fade-in
-
-a.anchorlink:hover
-  background: #EDCED2
-  color: #B50D20
+  &:hover
+    background: #EDCED2
+    color: #B50D20
 
 .content
   min-height: 700px
@@ -219,3 +219,44 @@ footer
   background-position: -300px -115px 
   width: 100px
   height: 100px
+
+form 
+  padding-top: 15px
+  width: 80%
+  margin: 0 auto
+
+label, input
+  display: inline-block
+
+label 
+  width: 30%
+  text-align: right
+
+label + input 
+  width: 30%
+  margin: 0 30% 0 1%
+
+input + input 
+  float: right
+
+input 
+  padding-left: 5px
+  border: none
+
+label + textarea
+  width: 30%
+  margin: 0 30% 0 1%
+
+textarea 
+  padding-left: 5px
+  border: none
+
+input.submit
+  padding: 0!important
+  font-size: 18px
+  width: 100px
+
+.required:after
+  color: $red
+  content: '*'
+  display: inline
