@@ -1,32 +1,32 @@
-//= require_tree .
 //= require_bower_dependencies
+//= require_tree .
 
-$(document).ready(function() {
-	var speed = 10;
+var speed = 10;
 
-	$('section').each(function() {
-		var $backgroundObject = $(this);
+$('section').each(function() {
+	var $backgroundObject = $(this);
 
-		$(window).scroll(function() {
-			var scrollTop = $(window).scrollTop();
-			var yPosition = -(scrollTop / speed);
-			var coords = '50% ' + yPosition + 'px';
-			$backgroundObject.css({ backgroundPosition: coords});
+	$(window).scroll(function() {
+		var scrollTop = $(window).scrollTop();
+		var yPosition = -(scrollTop / speed);
+		var coords = '50% ' + yPosition + 'px';
+		$backgroundObject.css({ backgroundPosition: coords});
 
-			handleBackToTop(scrollTop);
-		})
-	});
+		handleBackToTop(scrollTop);
+	})
+});
 
 
-	$('nav a').each(function() {
-		var button = $(this);
+$('nav a').each(function() {
+	var button = $(this);
 
-		button.click(function() { 
-			var sectionName = button.attr('href');
-			scrollTo(sectionName);
-		});
+	button.click(function() { 
+		var sectionName = button.attr('href');
+		scrollTo(sectionName);
 	});
 });
+
+setupCarousel();
 
 var fading = false;
 

@@ -100,7 +100,7 @@ module Bower
     
     def process_require_bower_dependencies_directive
       bower_dependencies.each do |filename|
-        context.require_asset(filename)
+        context.require_asset(filename.gsub("#{Bower::bower_install_path}/",''))
       end
     end
 
@@ -108,10 +108,11 @@ module Bower
     def bower_dependencies
       cmd = 'bower ls --paths'
       data = IO.popen(cmd)
-      bower_paths = JSON.parse(data.read).keys
+      bower_paths = JSON.parse(data.read).values
+      puts bower_paths
       data.close 
 
-      bower_paths
+      bower_paths.reverse
     end
 end
 
